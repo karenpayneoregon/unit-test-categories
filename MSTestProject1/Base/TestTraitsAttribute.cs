@@ -5,9 +5,6 @@ namespace MSTestProject1.Base
     /// <summary>
     /// Declarative class for using Trait enum about for traits on test method.
     /// </summary>
-    /// <remarks>
-    /// https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcategoryattribute?view=visualstudiosdk-2022
-    /// </remarks>
     public class TestTraitsAttribute : TestCategoryBaseAttribute
     {
         private readonly Trait[] _traits;

@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F74D5E99-D8F2-4DEA-9BD2-EB5B45A68503}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
+		stash.txt = stash.txt
 	EndProjectSection
 EndProject
 Global
