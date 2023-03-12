@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamLibrary", "TeamLibrary\TeamLibrary.csproj", "{DE544FF7-320C-4862-838B-39F5A001D75E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamLibrary", "TeamLibrary\TeamLibrary.csproj", "{DE544FF7-320C-4862-838B-39F5A001D75E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class projects", "{9DC744F0-15CE-4D12-AEBF-AB290BDA7C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestProject1", "MSTestProject1\MSTestProject1.csproj", "{48FD4815-669E-458A-BE02-FAE02A3D8A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTestProject1", "MSTestProject1\MSTestProject1.csproj", "{48FD4815-669E-458A-BE02-FAE02A3D8A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{D5106D70-75B3-4033-931F-C59929FBBD0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{D5106D70-75B3-4033-931F-C59929FBBD0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestHelperLibrary", "UnitTestHelperLibrary\UnitTestHelperLibrary.csproj", "{F6E18C89-BC91-4AB9-A2BD-615597F5180D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestHelperLibrary", "UnitTestHelperLibrary\UnitTestHelperLibrary.csproj", "{F6E18C89-BC91-4AB9-A2BD-615597F5180D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F74D5E99-D8F2-4DEA-9BD2-EB5B45A68503}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		stash.txt = stash.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{13823C96-A6FA-4D13-9138-2EED5D1A6809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{13823C96-A6FA-4D13-9138-2EED5D1A6809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestHelperLibrary1", "UnitTestHelperLibrary1\UnitTestHelperLibrary1.csproj", "{36018D65-EB6C-4980-8FEA-B2051C535F17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{13823C96-A6FA-4D13-9138-2EED5D1A6809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13823C96-A6FA-4D13-9138-2EED5D1A6809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13823C96-A6FA-4D13-9138-2EED5D1A6809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36018D65-EB6C-4980-8FEA-B2051C535F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36018D65-EB6C-4980-8FEA-B2051C535F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36018D65-EB6C-4980-8FEA-B2051C535F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36018D65-EB6C-4980-8FEA-B2051C535F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{DE544FF7-320C-4862-838B-39F5A001D75E} = {9DC744F0-15CE-4D12-AEBF-AB290BDA7C9E}
 		{F6E18C89-BC91-4AB9-A2BD-615597F5180D} = {9DC744F0-15CE-4D12-AEBF-AB290BDA7C9E}
 		{13823C96-A6FA-4D13-9138-2EED5D1A6809} = {9DC744F0-15CE-4D12-AEBF-AB290BDA7C9E}
+		{36018D65-EB6C-4980-8FEA-B2051C535F17} = {9DC744F0-15CE-4D12-AEBF-AB290BDA7C9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CD5F8D1-1AFE-4397-96D5-54A61CF0F713}

@@ -63,6 +63,11 @@ public partial class Tests
         Assert.AreEqual(actual, minute);
 
     }
+[Test, Category("EntityFrameworkCore")]
+public void SomeTest()
+{
+
+}
     [Test, Category(nameof(Trait.EntityFrameworkCore))]
     public void EvaluatingWeekendDatesInDatabase()
     {

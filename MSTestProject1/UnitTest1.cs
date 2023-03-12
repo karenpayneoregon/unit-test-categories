@@ -11,18 +11,19 @@ namespace MSTestProject1;
 [TestClass]
 public partial class UnitTest1 : TestBase
 {
-    [TestMethod]
-    [TestTraits(Trait.StringHelpers)]
+    [TestMethod, TestCategory(nameof(Trait.StringHelpers))]
     public void NaturalStringSort()
     {
         // arrange
         List<string> fileNames = new()
         {
-            "Example12.txt", "Example1.txt", "Example2.txt", "Example3.txt", "Example4.txt", "Example10.txt"
+            "Example12.txt", "Example1.txt", "Example2.txt", 
+            "Example3.txt", "Example4.txt", "Example10.txt"
         };
         List<string> expected = new()
         {
-            "Example1.txt", "Example2.txt", "Example3.txt", "Example4.txt", "Example10.txt", "Example12.txt"
+            "Example1.txt", "Example2.txt", "Example3.txt", 
+            "Example4.txt", "Example10.txt", "Example12.txt"
         };
 
         // act
@@ -40,8 +41,7 @@ public partial class UnitTest1 : TestBase
         Assert.AreEqual(10.GetMaxNumber(2),10);
     }
 
-    [TestMethod]
-    [TestTraits(Trait.TimeOnly)]
+    [TestMethod, TestTraits(Trait.TimeOnly)]
     public void TimeOnlyTest()
     {
         // arrange

@@ -1,6 +1,6 @@
-﻿using UnitTestHelperLibrary;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MSTestProject1.Base;
+namespace UnitTestHelperLibrary1;
 
 /// <summary>
 /// Declarative class for using Trait enum about for traits on test method.
@@ -15,5 +15,5 @@ public class TestTraitsAttribute : TestCategoryBaseAttribute
     }
 
     public override IList<string> TestCategories => _traits.Select(trait 
-        => Enum.GetName(typeof(Trait), trait)).ToList();
+        => Enum.GetName(typeof(Trait), trait)).ToList()!;
 }
