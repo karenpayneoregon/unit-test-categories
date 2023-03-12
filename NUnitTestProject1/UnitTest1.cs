@@ -1,10 +1,15 @@
+using DataLibrary.Classes;
+using DataLibrary.Data;
 using TeamLibrary.Extensions;
 using TeamLibrary.HelperClasses;
 using UnitTestHelperLibrary;
+#pragma warning disable NUnit2007
+#pragma warning disable NUnit2005
+#pragma warning disable NUnit2005
 
 namespace NUnitTestProject1;
 
-public class Tests
+public partial class Tests
 {
     
 
@@ -57,5 +62,23 @@ public class Tests
         // assert
         Assert.AreEqual(actual, minute);
 
+    }
+    [Test, Category(nameof(Trait.EntityFrameworkCore))]
+    public void EvaluatingWeekendDatesInDatabase()
+    {
+        // arrange
+        CreateDatabase();
+
+        const int expectedCount = 3;
+        using var context = new StoreContext();
+
+        // act
+        var saturdayOrSundayDelivered = context.Orders.AsEnumerable().Where(o => o.DeliveredDate.IsWeekend()).ToList();
+
+        // assert
+        int count = saturdayOrSundayDelivered.Count;
+
+        Assert.AreEqual(saturdayOrSundayDelivered.Count, expectedCount,
+            $"Expect {expectedCount} but returned {count}");
     }
 }

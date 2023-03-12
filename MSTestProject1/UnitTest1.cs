@@ -1,4 +1,6 @@
 using System.Text;
+using DataLibrary.Classes;
+using DataLibrary.Data;
 using MSTestProject1.Base;
 using TeamLibrary.Extensions;
 using TeamLibrary.HelperClasses;
@@ -63,17 +65,21 @@ public partial class UnitTest1 : TestBase
     }
 
     [TestMethod]
-    [TestCategory("TimeOnly")]
-    public void ConventionalTestMethod()
+    [TestTraits(Trait.EntityFrameworkCore)]
+    public void EvaluatingWeekendDatesInDatabase()
     {
         // arrange
-        TimeOnly time = new TimeOnly(13, 15, 0);
-
+        const int expectedCount = 3;
+        using var context = new StoreContext();
+        
         // act
-        var (_, minute, _) = time.TimeSegments();
+        var saturdayOrSundayDelivered = context.Orders.AsEnumerable().Where(o => o.DeliveredDate.IsWeekend()).ToList();
 
         // assert
-        Assert.AreEqual(15, minute);
+        int count = saturdayOrSundayDelivered.Count;
+        
+        Assert.AreEqual(saturdayOrSundayDelivered.Count, expectedCount, 
+            $"Expect {expectedCount} but returned {count}");
     }
 
 }

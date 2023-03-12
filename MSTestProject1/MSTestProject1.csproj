@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj" />
     <ProjectReference Include="..\TeamLibrary\TeamLibrary.csproj" />
     <ProjectReference Include="..\UnitTestHelperLibrary\UnitTestHelperLibrary.csproj" />
   </ItemGroup>
